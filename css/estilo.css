@@ -1,0 +1,46 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-gap: 10px;
+    grid-template-rows: 2fr 10fr 2fr;
+    grid-template-areas: "header   header    header"
+                         "site1    contenido site2"
+                         "footer   footer    footer";
+}
+.contenedor>div{
+    background-color: greenyellow;
+}
+.contenedor .elemento{
+    background-color: yellow;
+    grid-column: 1/4;
+    border-radius: 30px;
+}
+.contenedor .site1{
+    background-color: darkorange;
+    grid-column: 1/1;
+    border-radius: 30px;
+}
+.contenedor .site2{
+    background-color: darkslategray;
+    grid-column: 3/4;
+    border-radius: 30px;
+}
+.contenedor .contenido{
+    background-color: brown;
+    grid-column: 2/3;
+    border-radius: 15px;
+}
+.contenedor .footer{
+    background-color: darkseagreen;
+    grid-column: 1/4;
+}
+.cj{
+    background-color: greenyellow;
+    padding: 1fr;
+    grid-column: 1fr 2fr 1fr;
+    
+}
